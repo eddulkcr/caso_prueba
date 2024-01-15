@@ -43,4 +43,7 @@ este comando levantara la app en http://localhost:3000/ el puerto por defecto qu
 
 #Solucion del problema
 
--
+- como primer punto lo que hice fue leer el archivo y cargarlo en un textarea para poder visaulizar la informacion que seria procesada
+- con la informacion ya mostrandose en el textarea lo que hice gue procesar la informacion en un compontente llamado TestProcessButton, en este componente procese la informacion de tal manera que se presentara como un JSON, lo logre tomando la informacion ingresada y separadola usando split en cada salto de linea
+- con la informacion separada por salto de linea, compare los datos en las lineas para poder separar la descricion del tiempo de duracion
+- con esta informacion separada obtuve un JSON que separaba los dos datos que nos proporsionaba por cada tema a exponer.
