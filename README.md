@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# TEST TÉCNICO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Requerimientos:
 
-## Available Scripts
+- La solución debe estar implementada en PHP, JavaScript (VueJS, React, NodeJS), Python, Java con una interfaz de usuario que permita el ingreso de la información y visualizar los resultados.
+- La aplicación debe recibir como entrada un archivo de texto.
+- Utilizar únicamente elementos de su autoría. (No librerías de Terceros)
 
-In the project directory, you can run:
+## Problema: Temas de la conferencia.
 
-### `npm start`
+### Planteamiento del problema:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Se ha decidido planificar una conferencia y se han recibido muchas propuestas lo que ha generado dificultad para que todas quepan en los espacios previstos para el día del evento. Debido a que existen muchas posibilidades se necesita crear un programa que ayude a organizar el evento.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Características
 
-### `npm test`
+- La conferencia está dividida en varias temáticas.
+- Cada temática tiene una sesión en la mañana y otra en la tarde.
+- Cada sesión contiene múltiples charlas.
+- Las sesiones de la mañana empiezan a las 9 AM y deben terminar a las 12 del mediodía, para el almuerzo.
+- Las sesiones de la tarde empiezan a la 1 PM y deben terminar a tiempo para el evento social.
+- El evento social no puede empezar antes de las 4:00 ni después de las 5:00.
+- Ninguno de los títulos de las charlas contienen números.
+- La duración de todas las charlas está dada en minutos (no horas).
+- Se asume que los presentadores serán muy puntuales por lo tanto no hay necesidad de programar descansos entre sesiones. - Existen varias formas de resolver este problema y se van a generar diferentes combinaciones, se incluye un ejemplo pero no se tiene que replicar el mismo resultado.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Desplegar la solucion
 
-### `npm run build`
+Para correr la solucion es necesario, ingresar a la carpeta contenedora de la app, dentro de nuestra terminal preferida colocarnos en la carpeta que contenga la app, toamr en cuenta que debe estar instalado previamente NodeJS 18v+
+Garantizando que se tenga la version correcta de Node ubicados en la carpeta abrir la terminar, ejecutar los siguientes comandos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+  npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+con este comado se descargara todas las dependencias necesarias para la ejecucion del programa
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  npm start
+```
 
-### `npm run eject`
+este comando levantara la app en http://localhost:3000/ el puerto por defecto que se levanta las apps react es el 3000 sin embargo se debe tomar en cuenta donde se desplego
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#Solucion del problema
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-
